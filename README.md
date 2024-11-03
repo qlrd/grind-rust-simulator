@@ -31,7 +31,9 @@ cargo build
 
 This will increase CPU usage. For best performance, close all unused programs.
 
-So far, tested on:
+So far, tested on (with 16 threads):
 
-- MacOS M2 (arm64): `CPU ~= 75-80%` and found hash in ``
-- 12th gen i5, 16 threads: `CPU ~= ?%` and found hash in `239.49s` 
+| OS        | Processor   | CPU usage | found hash in (s) | nonce       | hash                    | 
+| --------- | ----------- | --------- | ----------------- | ----------- | ------------------------|
+| ?         | 12th gen i5 | `?%`      | `239.49s`         | 1480740277  | `00000000b4d3...86b1740`| 
+| macOS M2  | arm64       | `75-80%`  | `2942.25s`        | 1480740277  | `00000000b4d3...86b1740`|
